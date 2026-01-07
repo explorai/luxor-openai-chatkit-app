@@ -7,17 +7,23 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Que pouvez-vous faire ?",
-    prompt: "Que pouvez-vous faire ?",
+    label: "Quel est le statut de la commande 105 ?",
+    prompt: "Quel est le statut de la commande 105 ?",
+    icon: "circle-question",
+  },
+  {
+    label: "Quel sont les caractéristiques de la collection Serenity ?",
+    prompt: "Quel sont les caractéristiques de la collection Serenity ?",
     icon: "circle-question",
   },
 ];
 
-export const PLACEHOLDER_INPUT = "Demandez n'importe quoi...";
+export const PLACEHOLDER_INPUT = "Poser une question...";
 
 export const GREETING = "Comment puis-je vous aider aujourd'hui ?";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
+
   color: {
     grayscale: {
       hue: 220,
@@ -25,7 +31,7 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: theme === "dark" ? -1 : -4,
     },
     accent: {
-      primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
+      primary: "#ebba60",
       level: 1,
     },
   },
