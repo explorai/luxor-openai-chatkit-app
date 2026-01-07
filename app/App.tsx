@@ -20,8 +20,21 @@ export default function App() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-end bg-slate-100 dark:bg-slate-950">
-      <div className="mx-auto w-full max-w-5xl">
+    <main className="flex min-h-screen flex-col items-center bg-slate-100 dark:bg-slate-950">
+      {/* Header with Luxor branding */}
+      <div className="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 shadow-sm">
+        <div className="mx-auto max-w-5xl px-4 py-4">
+          <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-200">
+            LUXOR
+          </h1>
+          <p className="text-sm text-slate-600 dark:text-slate-400">
+            Assistant virtuel
+          </p>
+        </div>
+      </div>
+      
+      {/* Chat area */}
+      <div className="mx-auto w-full max-w-5xl flex-1 flex flex-col justify-end">
         <ChatKitPanel
           theme={scheme}
           onWidgetAction={handleWidgetAction}
